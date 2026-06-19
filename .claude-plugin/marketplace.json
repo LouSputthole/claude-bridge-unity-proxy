@@ -1,0 +1,37 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-bridge-unity",
+  "description": "Build Unity games by talking to Claude — or any AI. The Claude Bridge for Unity: a self-contained MCP proxy that drives the Unity Editor and survives domain reloads, plus a plugin-with-a-brain skill set (setup, the screenshot-driven build-feature workflow, idiomatic Unity C# API, and a starter genre/system cookbook).",
+  "owner": {
+    "name": "LouSputthole",
+    "url": "https://github.com/LouSputthole"
+  },
+  "plugins": [
+    {
+      "name": "claude-bridge-unity",
+      "displayName": "Claude Bridge for Unity",
+      "version": "0.3.0",
+      "description": "Connect Claude Code to the Unity Editor and build games by describing them. The Claude Bridge proxy speaks MCP over stdio and bridges to a running Unity Editor over a private WebSocket — staying connected across domain reloads so a normal recompile never breaks the session. Drives GameObjects, transforms, components, scenes, play-mode simulation, and reflection-grounded inspection; the high-level authoring/scaffold/NPC/worldgen waves build on top. Bundles four skills: claude-bridge-setup, claude-bridge-build-feature, claude-bridge-api, and claude-bridge-cookbook. The Unity package and the proxy binary install separately (see the plugin README). Proprietary, commercial.",
+      "author": {
+        "name": "LouSputthole",
+        "url": "https://github.com/LouSputthole"
+      },
+      "category": "game-development",
+      "source": "./plugin",
+      "homepage": "https://github.com/LouSputthole/Claude-Bridge-Unity/tree/main/plugin",
+      "keywords": [
+        "unity",
+        "unity6",
+        "game-engine",
+        "game-dev",
+        "game-development",
+        "csharp",
+        "monobehaviour",
+        "ai",
+        "mcp",
+        "bridge",
+        "claude-bridge"
+      ]
+    }
+  ]
+}

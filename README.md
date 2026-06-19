@@ -34,3 +34,24 @@ Full docs ship inside the Asset Store package (`Documentation/`).
 
 ---
 The proxy is free and redistributable. The paid product is the Unity **Editor package** (the 300 tools).
+
+---
+
+## Claude Code plugin (skills + auto MCP config)
+
+Prefer not to hand-edit MCP config? Install the companion plugin — it registers the
+bridge and adds the skill workflows (setup, build-feature, the Unity C# API guide, and a
+genre/system cookbook).
+
+```bash
+claude plugin marketplace add LouSputthole/claude-bridge-unity-proxy
+claude plugin install claude-bridge-unity@claude-bridge-unity
+```
+
+Then **restart Claude Code** (MCP servers load at startup). The plugin connects over
+**HTTP**, so in Unity enable it once: **Window ▸ Claude Bridge ▸ Options ▸ Enable HTTP
+endpoint** (binds `http://127.0.0.1:17331/mcp`). Ask Claude *"check the bridge status"* to
+confirm.
+
+> Want the stdio transport instead (survives domain reloads)? Download the proxy above and
+> use the bridge's **Copy MCP config** button, or see the package's `Documentation/`.

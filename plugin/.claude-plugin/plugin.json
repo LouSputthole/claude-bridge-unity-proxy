@@ -1,0 +1,24 @@
+{
+  "name": "claude-bridge-unity",
+  "description": "Build Unity games by talking to Claude. Bundles the Claude Bridge for Unity MCP server (a self-contained stdio proxy that drives the Unity Editor over WebSocket and survives domain reloads) plus a plugin-with-a-brain skill set: claude-bridge-setup (first-run onboarding + connection verify), claude-bridge-build-feature (the screenshot-driven iteration workflow + the hard-won Unity gotchas: flat 'x,y,z' params, verify-the-mutation, reflection-first via describe_type, compile-verify generated code, play-mode verification, and handing 'feel' to a human), claude-bridge-api (idiomatic Unity C# / MonoBehaviour / Editor-vs-runtime / AssetDatabase patterns so the agent writes Unity not s&box/Unreal), claude-bridge-cookbook (a starter router of Unity genre/system recipes), and claude-bridge-scaffold-game (turns one ask into a playable first-person starter you can press Play on). Also bundles the unity-game-dev specialist subagent for self-contained build hand-offs. The Unity package + the proxy binary install separately (see README).",
+  "version": "0.3.0",
+  "author": {
+    "name": "LouSputthole"
+  },
+  "homepage": "https://github.com/LouSputthole/Claude-Bridge-Unity",
+  "repository": "https://github.com/LouSputthole/Claude-Bridge-Unity",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "unity",
+    "unity6",
+    "game-engine",
+    "game-dev",
+    "game-development",
+    "csharp",
+    "monobehaviour",
+    "ai",
+    "mcp",
+    "bridge",
+    "claude-bridge"
+  ]
+}
